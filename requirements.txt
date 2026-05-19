@@ -1,35 +1,18 @@
-# ============================================================
-# YouTube Comment Sentiment Analysis Dashboard
-# requirements.txt — pinned for reproducibility
-# Python 3.10+ recommended
-# ============================================================
-
-# --- Web Framework ---
 streamlit==1.35.0
-
-# --- YouTube Data API ---
 google-api-python-client==2.131.0
 google-auth==2.29.0
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.0
-
-# --- ML / NLP ---
 transformers==4.41.2
-torch==2.3.0                   # CPU build; swap for torch+cu121 on GPU hosts
+torch==2.3.0                   
 tokenizers==0.19.1
 huggingface-hub==0.23.2
 safetensors==0.4.3
-sentencepiece==0.2.0            # required by some RoBERTa tokeniser configs
-scipy==1.13.1                   # softmax used internally by transformers pipeline
-
-# --- Data Engineering ---
+sentencepiece==0.2.0            
+scipy==1.13.1                   
 pandas==2.2.2
 numpy==1.26.4
-
-# --- Visualisation ---
 plotly==5.22.0
-
-# --- Utilities ---
-python-dotenv==1.0.1            # load YOUTUBE_API_KEY from .env locally
+python-dotenv==1.0.1            
 requests==2.32.2
 tqdm==4.66.4
